@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Глубинка</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/pages/main/main.css" />
+    <link rel="stylesheet" href="/src/pages/all/all.css" />
+</head>
+
+<body>
+    <div id="root">
+        <header class="header">
+            <div class="header__container">
+                <img src="/glubinka_logo.svg" />
+                <label class="search">
+                    <img src="/search.svg" />
+                    <input class="search__input" placeholder="Поиск" type="search">
+                </label>
+                <div class="actions">
+                    <span class="actions__button">
+                        <span class="icon__label">12</span>
+                        <img src="/icons/shopping-cart-2-line.svg" />
+                    </span>
+                    <span class="actions__button">
+                        <img src="/icons/heart-line.svg" />
+                    </span>
+                    <span class="actions__button">
+                        <img src="/icons/user-3-line.svg" />
+                    </span>
+                </div>
+            </div>
+        </header>
+        <nav id="main-nav" class="navigation">
+            <div class="navigation__container">
+                <a class="navigation__item" href="/" onclick="route()">Главная</a>
+                <a class="navigation__item" href="/all" onclick="route()">Все</a>
+                <a class="navigation__item" href="/item" onclick="route()">Товар</a>
+            </div>
+        </nav>
+        <main id="main-page" class="main-page"></main>
+        <footer class="footer">
+            <div class="footer__container">
+                Подвал
+            </div>
+        </footer>
+    </div>
+
+    <script src="/src/js/router.js"></script>
+    <script src="/src/components/itemCard.js"></script>
+</body>
+
+</html>

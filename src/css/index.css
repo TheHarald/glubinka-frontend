@@ -1,0 +1,142 @@
+
+@import url('https://rsms.me/inter/inter.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #121212;
+    --white: #FFFFFF;
+    --red: #FF0024;
+    --grey: #5A607F;
+    --light-grey: #D9E4FF;
+    --dark-grey: #5E5E5E;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-page{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.page__container{
+    width: 1024px;
+}
+
+.footer__container{
+    width: 1024px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    height: 100px;
+}
+
+
+.header{
+    background-color: var(--black);
+    height: 60px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header__container{
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.search{
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    background: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    flex: 1;
+}
+
+.search__input{
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey);
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions__button{
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.icon__label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--white);    
+    background-color: var(--red);
+    padding: 2px 6px;
+    border-radius: 12px;
+    position: absolute;
+    right: -8px;
+    top: -4px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__container{
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+.navigation__item{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: solid 4px transparent;
+}
+
+.selected-page{
+    border-bottom: solid 4px var(--red);
+    transition: 0.5s;
+}
