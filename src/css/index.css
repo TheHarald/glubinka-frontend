@@ -32,11 +32,11 @@ body {
 }
 
 .page__container{
-    width: 1024px;
+    width: 1200px;
 }
 
 .footer__container{
-    width: 1024px;
+    width: 1200px;
 }
 
 .footer{
@@ -56,7 +56,7 @@ body {
 }
 
 .header__container{
-    width: 1024px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -119,7 +119,7 @@ body {
 }
 
 .navigation__container{
-    width: 1024px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 40px;

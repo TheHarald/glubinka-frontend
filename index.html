@@ -4,12 +4,34 @@
 <head>
     <title>Глубинка</title>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="stylesheet" href="/src/pages/main/main.css" />
     <link rel="stylesheet" href="/src/pages/all/all.css" />
 </head>
 
 <body>
+    <template id="item-card">
+        <article class="item__card">
+            <div class="image__container">
+                <img class="item__image" src="">
+            </div>
+            <div class="item__info">
+                <div class="main__info">
+                    <p class="item__title">0</p>
+                    <p class="item__price">0</p>
+                </div>
+                <div class="item__actions">
+                    <button class="icon__container">
+                        <img class="icon" src="/icons/heart-line.svg" />
+                    </button>
+                    <button class="icon__container">
+                        <img class="icon" src="/icons/shopping-cart-2-line.svg" />
+                    </button>
+                </div>
+            </div>
+        </article>
+    </template>
     <div id="root">
         <header class="header">
             <div class="header__container">
@@ -34,9 +56,9 @@
         </header>
         <nav id="main-nav" class="navigation">
             <div class="navigation__container">
-                <a class="navigation__item" href="/" onclick="route()">Главная</a>
-                <a class="navigation__item" href="/all" onclick="route()">Все</a>
-                <a class="navigation__item" href="/item" onclick="route()">Товар</a>
+                <a class="navigation__item" href="/">Главная</a>
+                <a class="navigation__item" href="/all">Все</a>
+                <a class="navigation__item" href="/item">Товар</a>
             </div>
         </nav>
         <main id="main-page" class="main-page"></main>
@@ -47,8 +69,7 @@
         </footer>
     </div>
 
-    <script src="/src/js/router.js"></script>
-    <script src="/src/components/itemCard.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
