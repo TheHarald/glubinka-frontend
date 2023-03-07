@@ -1,4 +1,4 @@
-import { getItems } from "./api";
+import { getItem, getItems } from "./api";
 
 const navigationItems = document.querySelectorAll('.navigation__item')
 
@@ -23,21 +23,26 @@ const routes = {
 };
 
 
-const handleLocation = async () => {
+export const handleLocation = async () => {
     const path = window.location.pathname;
+    // if(/\d$/.test(path)){
+    //     const temp = path.split('/')
+    //     path = `/${temp[1]}`
+    // } 
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
     let index = Object.keys(routes).splice(1).indexOf(path)
-
     navigationItems.forEach( i=> i.classList.remove('selected-page'))
     navigationItems[index].classList.add('selected-page')
     if(path === '/all'){
         const itemList = document.querySelector('.items')
-        // console.log(itemList);
         getItems(itemList)
     }
 
+    // if(path === '/item'){
+    //     getItem()
+    // }
 };
 
 
