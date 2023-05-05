@@ -1,6 +1,6 @@
 import { handleLocation } from "./router"
 
-const ghUrl = "https://raw.githubusercontent.com/TheHarald/glubinka-frontend/master/frontend/store-items/db.json"
+const ghUrl = "https://raw.githubusercontent.com/TheHarald/glubinka-frontend/master/store-items/db.json"
 
 const itemTemplate = document.getElementById('item-card').content
 
@@ -65,7 +65,7 @@ export async function getItem() {
             //set sizes
             item.sizes.map((size, index) => {
                 const sizeElement = document.createElement('span')
-                sizeElement.classList.add('item-info__szie')
+                sizeElement.classList.add('item-info__size')
                 index || sizeElement.classList.add('selected')
                 sizeElement.textContent = size
                 sizesContainer.appendChild(sizeElement)
@@ -74,7 +74,7 @@ export async function getItem() {
             // set colors
             item.colors.map(color => {
                 const colorElement = document.createElement('span')
-                colorElement.classList.add('item-info__szie')
+                colorElement.classList.add('item-info__size')
                 colorElement.textContent = color.title
                 // colorElement.style.background = color.hex
                 colorsContainer.appendChild(colorElement)
