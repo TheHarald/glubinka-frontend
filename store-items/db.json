@@ -5,10 +5,22 @@
             "title": "Футболка",
             "price": 3999,
             "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL"
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                },
+                {
+                    "size": "XL",
+                    "isExist": false
+                }
             ],
             "colors": [
                 {
@@ -37,9 +49,18 @@
             "title": "Шорты",
             "price": 4999,
             "sizes": [
-                "S",
-                "M",
-                "L"
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                }
             ],
             "colors": [
                 {

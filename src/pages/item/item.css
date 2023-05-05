@@ -98,6 +98,19 @@
     color: var(--black);
 }
 
+.item-info__size-not-exist {
+    background: var(--white);
+    border: 1px solid var(--black);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 12px 42px;
+    color: var(--black);
+    opacity: 25%
+}
+
 .item-info__parameters {
     display: flex;
     flex-direction: column;

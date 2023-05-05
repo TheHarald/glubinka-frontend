@@ -63,11 +63,15 @@ export async function getItem() {
             })
 
             //set sizes
-            item.sizes.map((size, index) => {
+            item.sizes.map((sizeObj, index) => {
                 const sizeElement = document.createElement('span')
-                sizeElement.classList.add('item-info__size')
+                if (sizeObj.isExist === true) {
+                    sizeElement.classList.add('item-info__size')
+                } else {
+                    sizeElement.classList.add('item-info__size-not-exist')
+                }
                 index || sizeElement.classList.add('selected')
-                sizeElement.textContent = size
+                sizeElement.textContent = sizeObj.size
                 sizesContainer.appendChild(sizeElement)
             })
 
