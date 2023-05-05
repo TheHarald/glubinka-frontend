@@ -1,9 +1,9 @@
-import { getItem, getItems } from "./api";
+import { getItems } from "./api";
 
 const navigationItems = document.querySelectorAll('.navigation__item')
 
-export function initNavigation(){
-    navigationItems.forEach( nav=>{
+export function initNavigation() {
+    navigationItems.forEach(nav => {
         nav.onclick = route
     })
 }
@@ -25,24 +25,17 @@ const routes = {
 
 export const handleLocation = async () => {
     const path = window.location.pathname;
-    // if(/\d$/.test(path)){
-    //     const temp = path.split('/')
-    //     path = `/${temp[1]}`
-    // } 
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
     let index = Object.keys(routes).splice(1).indexOf(path)
-    navigationItems.forEach( i=> i.classList.remove('selected-page'))
+    navigationItems.forEach(i => i.classList.remove('selected-page'))
     navigationItems[index].classList.add('selected-page')
-    if(path === '/all'){
+    if (path === '/all') {
         const itemList = document.querySelector('.items')
         getItems(itemList)
     }
 
-    // if(path === '/item'){
-    //     getItem()
-    // }
 };
 
 

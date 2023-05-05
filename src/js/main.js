@@ -1,11 +1,7 @@
 import { initNavigation } from "./router"
 
-
-
-function init(){
+function init() {
     initNavigation()
 }
-
-
 
 init()

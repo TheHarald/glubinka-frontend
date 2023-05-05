@@ -1,52 +1,44 @@
 import { handleLocation } from "./router"
 
-const url = "http://localhost:3000/items"
+const ghUrl = "https://raw.githubusercontent.com/TheHarald/glubinka-frontend/master/frontend/store-items/db.json"
 
 const itemTemplate = document.getElementById('item-card').content
 
 export const getItems = async (itemList) => {
-    fetch(url)
+    fetch(ghUrl)
         .then(data => data.json())
-        . then( data => data.map(item =>{
-            const newItem = document.importNode(itemTemplate,true)
+        .then(data => data.items.map(item => {
+            const newItem = document.importNode(itemTemplate, true)
             newItem.querySelector('.item__title').textContent = item.title
             newItem.querySelector('.item__price').textContent = `${item.price} ₽`
             newItem.querySelector('.item__image').src = item.images[0]
             const itemCard = newItem.querySelector('.item__card')
-            itemCard.setAttribute('data-item-id',item.id)
-            itemCard.addEventListener('click',getItem)
-            // itemCard.addEventListener('click',toItem(item.id))
+            itemCard.setAttribute('data-item-id', item.id)
+            itemCard.addEventListener('click', getItem)
             itemList.appendChild(newItem)
         }))
-        .catch(error =>{
-                const label = document.createElement('p')
-                label.textContent = error
-                itemList.appendChild(label)
-            })
+        .catch(error => {
+            const label = document.createElement('p')
+            label.textContent = error
+            itemList.appendChild(label)
+        })
 }
 
 
-function toItem(id){
-    window.history.pushState({}, '', `/item/${id}`);
-    handleLocation();
-}
 
-export function getItem(){
+export async function getItem() {
     const itemId = this.getAttribute('data-item-id')
     window.history.pushState({}, '', `/item`);
-    handleLocation()
-    // const itemId = window.location.pathname
-    // console.log(itemId);
+    await handleLocation()
 
-    fetch(`${url}/${itemId}`)
+    fetch(ghUrl)
         .then(data => data.json())
-        .then( data => {
-            console.log(data);
-            console.log(document.querySelector('.item-page'));
-
-            document.querySelector('.item-page__title').textContent = data.title;
-            document.querySelector('.item-page__price').textContent = `${data.price} ₽`;
-            document.querySelector('.description__text').textContent = data.description;
+        .then(data => {
+            const item = data.items.find(item => item.id === itemId)
+            document.querySelector('.item-page__title').textContent = item.title;
+            document.querySelector('.navigation__item.item-page-helper').textContent = item.title;
+            document.querySelector('.item-page__price').textContent = `${item.price} ₽`;
+            document.querySelector('.description__text').textContent = item.description;
 
             const sizesContainer = document.querySelector('.item-info__size-container')
             const smallImages = document.querySelector('.item-page__images-small')
@@ -55,23 +47,23 @@ export function getItem(){
             const detailsContainer = document.querySelector('.item-info__details')
 
             //set images
-            data.images.map(image=>{
+            item.images.map(image => {
                 const smallImage = document.createElement('img')
                 smallImage.classList.add('item-page__image-small')
                 smallImage.src = image
-                smallImage.alt = data.title
+                smallImage.alt = item.title
 
                 const bigImage = document.createElement('img')
                 bigImage.classList.add('item-page__image')
                 bigImage.src = image
-                bigImage.alt = data.title
+                bigImage.alt = item.title
 
                 smallImages.appendChild(smallImage)
                 bigImages.appendChild(bigImage)
             })
 
             //set sizes
-            data.sizes.map( (size,index) =>{
+            item.sizes.map((size, index) => {
                 const sizeElement = document.createElement('span')
                 sizeElement.classList.add('item-info__szie')
                 index || sizeElement.classList.add('selected')
@@ -80,8 +72,7 @@ export function getItem(){
             })
 
             // set colors
-
-            data.colors.map( color =>{
+            item.colors.map(color => {
                 const colorElement = document.createElement('span')
                 colorElement.classList.add('item-info__szie')
                 colorElement.textContent = color.title
@@ -91,7 +82,7 @@ export function getItem(){
 
             //set details
 
-            data.details.map( detail=>{
+            item.details.map(detail => {
                 const detailParametErelement = document.createElement('span')
                 const detailValueErelement = document.createElement('span')
                 detailValueErelement.classList.add('description__text')
