@@ -1,6 +1,7 @@
 import { handleLocation } from "./router"
 
 const ghUrl = "https://raw.githubusercontent.com/TheHarald/glubinka-frontend/master/store-items/db.json"
+const debugUrl = "../../store-items/db.json"
 
 const itemTemplate = document.getElementById('item-card').content
 

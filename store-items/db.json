@@ -39,13 +39,25 @@
             "description": "Представляем вам нашу футболку - классический и универсальный элемент гардероба, который должен быть в гардеробе каждого человека. Она изготовлена из мягкого и дышащего материала высокого качества, что обеспечивает комфорт и удобство при ношении на протяжении всего дня.",
             "details": [
                 {
+                    "parameter": "Материал",
+                    "value": "95% хлопок, 5% полиэстер"
+                },
+                {
                     "parameter": "Плотность",
                     "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
                 }
             ]
         },
         {
-            "id": "124",
+            "id": "2",
             "title": "Шорты",
             "price": 4999,
             "sizes": [
@@ -85,6 +97,278 @@
                 {
                     "parameter": "Материал",
                     "value": "95% хлопок, 5% полиэстер"
+                },
+                {
+                    "parameter": "Плотность",
+                    "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Свитшот",
+            "price": 8999,
+            "sizes": [
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                },
+                {
+                    "size": "XL",
+                    "isExist": true
+                }
+            ],
+            "colors": [
+                {
+                    "title": "Белый",
+                    "hex": "#ffffff"
+                },
+                {
+                    "title": "Черный",
+                    "hex": "#000000"
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
+                "https://plus.unsplash.com/premium_photo-1675186049222-0b5018db6ce9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+                "https://images.unsplash.com/photo-1601063476271-a159c71ab0b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80"
+            ],
+            "description": "Наш свитшот изготовлен из мягкого и комфортного материала высокого качества, который обеспечивает тепло и удобство в холодные дни. Он имеет модный и современный дизайн, который позволяет создавать различные образы и стили.",
+            "details": [
+                {
+                    "parameter": "Материал",
+                    "value": "95% хлопок, 5% полиэстер"
+                },
+                {
+                    "parameter": "Плотность",
+                    "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Джоггеры",
+            "price": 5499,
+            "sizes": [
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                },
+                {
+                    "size": "XL",
+                    "isExist": true
+                }
+            ],
+            "colors": [
+                {
+                    "title": "Синий",
+                    "hex": "#0000ff"
+                },
+                {
+                    "title": "Красный",
+                    "hex": "#ff0000"
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1552902875-9ac1f9fe0c07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+                "https://images.unsplash.com/photo-1553247407-23251ce81f59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+            ],
+            "description": "Джоггеры имеют удобный посад, резинку на талии и манжеты на ногах, что обеспечивает отличную посадку и защиту от скручивания во время движения. Они также оснащены карманами для удобства хранения мелочей.",
+            "details": [
+                {
+                    "parameter": "Материал",
+                    "value": "95% хлопок, 5% полиэстер"
+                },
+                {
+                    "parameter": "Плотность",
+                    "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Джинсовая куртка",
+            "price": 14499,
+            "sizes": [
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                },
+                {
+                    "size": "XL",
+                    "isExist": true
+                }
+            ],
+            "colors": [
+                {
+                    "title": "Темно-синий",
+                    "hex": "#0000ff"
+                },
+                {
+                    "title": "Голубой",
+                    "hex": "#80a6ff"
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1606243769346-784daeb4562f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                "https://images.unsplash.com/photo-1564438259159-32c208873398?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            ],
+            "description": "Джинсовая куртка - это классический и всегда актуальный элемент гардероба, который сочетает в себе практичность и стиль. Куртки снабжены карманами, молниями, пуговицами и другими удобствами, что делает их функциональными и практичными.",
+            "details": [
+                {
+                    "parameter": "Материал",
+                    "value": "95% хлопок, 5% полиэстер"
+                },
+                {
+                    "parameter": "Плотность",
+                    "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Бандана",
+            "price": 899,
+            "sizes": [
+                {
+                    "size": "S",
+                    "isExist": true
+                },
+                {
+                    "size": "M",
+                    "isExist": true
+                },
+                {
+                    "size": "L",
+                    "isExist": true
+                },
+                {
+                    "size": "XL",
+                    "isExist": true
+                }
+            ],
+            "colors": [
+                {
+                    "title": "Белый",
+                    "hex": "#ffffff"
+                },
+                {
+                    "title": "Черный",
+                    "hex": "#000000"
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1557050751-fabbc420f962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+                "https://images.unsplash.com/photo-1572599919023-ac08b9519794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            ],
+            "description": "Бандана - это стильный и универсальный аксессуар, который может использоваться в различных ситуациях и стилях. В нашем магазине вы найдете банданы различных цветов.",
+            "details": [
+                {
+                    "parameter": "Материал",
+                    "value": "95% хлопок, 5% полиэстер"
+                },
+                {
+                    "parameter": "Плотность",
+                    "value": "380 г/м3"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Аксессуар цепь на шею",
+            "price": 2499,
+            "sizes": [
+                {
+                    "size": "ONE",
+                    "isExist": true
+                }
+            ],
+            "colors": [
+                {
+                    "title": "Черный",
+                    "hex": "#000000"
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1521038063972-ab961f8515b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            ],
+            "description": "Цепь - это стильный элемент гардероба, который может использоваться как дополнение к необычному луку.",
+            "details": [
+                {
+                    "parameter": "Материал",
+                    "value": "100% сталь"
+                },
+                {
+                    "parameter": "Артикул",
+                    "value": "123456789"
+                },
+                {
+                    "parameter": "Код товара",
+                    "value": "1999"
                 }
             ]
         }
