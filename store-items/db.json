@@ -36,7 +36,7 @@
                 "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
                 "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
             ],
-            "description": "some string",
+            "description": "Представляем вам нашу футболку - классический и универсальный элемент гардероба, который должен быть в гардеробе каждого человека. Она изготовлена из мягкого и дышащего материала высокого качества, что обеспечивает комфорт и удобство при ношении на протяжении всего дня.",
             "details": [
                 {
                     "parameter": "Плотность",
@@ -60,7 +60,7 @@
                 {
                     "size": "L",
                     "isExist": true
-                }
+                },
                 {
                     "size": "XL",
                     "isExist": true
@@ -77,10 +77,10 @@
                 }
             ],
             "images": [
-                "https://images.unsplash.com/photo-1564135624576-c5c88640f235?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
-                "https://images.unsplash.com/photo-1560251486-b21dfa333d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                "https://images.unsplash.com/photo-1598522325074-042db73aa4e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+                "https://images.unsplash.com/photo-1598522325484-118715b67eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=391&q=80"
             ],
-            "description": "some string",
+            "description": "Наши шорты изготовлены из легкого и дышащего материала, что обеспечивает комфорт и свободу движений. Они имеют модный и современный дизайн, который позволяет создавать различные образы и стили.",
             "details": [
                 {
                     "parameter": "Материал",
