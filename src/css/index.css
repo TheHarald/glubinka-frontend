@@ -149,6 +149,7 @@ body {
 }
 
 .search__input {
+    width: 100%;
     background: none;
     appearance: none;
     border: none;
